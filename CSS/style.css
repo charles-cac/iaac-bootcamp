@@ -120,6 +120,13 @@ body{
 .cv-table{width:100%;border-collapse:collapse}
 .cv-table th{font-weight:700;padding:8px 0;text-align:left;color:var(--text)}
 .cv-table td{padding:10px 0;border-bottom:1px solid #f1f1f1;color:var(--muted)}
+
+/* Nested tables for education and positions */
+.cv-positions, .cv-education {width:100%;border-collapse:collapse;margin-top:6px}
+.cv-positions th, .cv-positions td, .cv-education td {padding:8px 6px;border-bottom:1px solid #f1f1f1;font-size:0.95rem}
+.cv-positions thead th{font-weight:700;color:var(--text)}
+.selected-projects{margin:6px 0 0 1.05rem;color:var(--muted)}
+
 .cv-sidebar{background:#fafafa;padding:18px;border-radius:8px;border:1px solid #f2f2f2}
 
 /* Work / projects */
