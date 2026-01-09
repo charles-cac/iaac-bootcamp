@@ -28,128 +28,92 @@
     </div>
   </header>
 
-  <div class="side-accent" aria-hidden="true"></div>
-
-  <main class="container main-content">
-    <!-- HOME -->
-    <section id="home" class="section active" tabindex="-1" aria-labelledby="home-title">
-      <div class="home-inner">
-        <div class="home-text">
-          <h2 id="home-title">Charles Abi Chahine</h2>
-          <p class="lead">Architect</p>
-          <div class="home-actions">
-            <a class="btn-hero btn-ghost" data-target="about" href="#about">About Me</a>
-            <a class="btn-hero btn-primary" data-target="work" href="#work">My Work</a>
-          </div>
-        </div>
-        <figure class="home-headshot">
-          <img src="images/headshot.svg" alt="Headshot — Charles Abi Chahine" width="420" height="420">
-        </figure>
+  <main>
+    <!-- HERO -->
+    <section class="hero container reveal">
+      <div class="hero-inner">
+        <h2 class="hero-name">Charles Abi Chahine</h2>
+        <p class="hero-sub">Architecture · Computational Design · BIM</p>
+        <a href="Charles_Abi_Chahine_Resume.pdf" class="btn-primary" download>Download Resume</a>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section" tabindex="-1" aria-labelledby="about-title">
-      <h2 id="about-title">About — Curriculum Vitae</h2>
+    <!-- RESUME / BIO -->
+    <section id="bio" class="bio container reveal">
+      <div class="bio-grid">
+        <article>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>LAU</strong> — Architecture</li>
+            <li><strong>Kent State</strong> — Exchange</li>
+          </ul>
+        </article>
 
-      <div class="cv-wrap">
-        <h3>Experience</h3>
-        <div class="cv-grid">
-          <div class="cv-row">
-            <div class="date">2021 — Present</div>
-            <div class="role">Architectural Designer</div>
-            <div class="place">SOMA — Beirut</div>
-          </div>
+        <article>
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>SOMA</strong> — Architectural Designer</li>
+            <li><strong>BIM International</strong> — BIM Specialist</li>
+          </ul>
+        </article>
 
-          <div class="cv-row">
-            <div class="date">2019 — 2021</div>
-            <div class="role">BIM Specialist</div>
-            <div class="place">BIM International</div>
-          </div>
-
-          <div class="cv-row">
-            <div class="date">2017 — 2019</div>
-            <div class="role">Architect / Designer</div>
-            <div class="place">Dynamic Solution Co — Kuwait</div>
-          </div>
-        </div>
-
-        <h3 style="margin-top:22px">Education</h3>
-        <div class="cv-grid">
-          <div class="cv-row">
-            <div class="date">2013 — 2017</div>
-            <div class="role">B.Arch</div>
-            <div class="place">LAU — Lebanon</div>
-          </div>
-          <div class="cv-row">
-            <div class="date">2015</div>
-            <div class="role">Exchange Program</div>
-            <div class="place">Kent State — USA</div>
-          </div>
-        </div>
-
-        <h3 style="margin-top:22px">Skills</h3>
-        <div class="skills-grid">
-          <div class="skill">Revit</div>
-          <div class="skill">Rhino</div>
-          <div class="skill">V-Ray</div>
-          <div class="skill">Adobe Suite</div>
-        </div>
-
-        <p style="margin-top:20px">
-          <a class="btn-hero btn-ghost" data-target="home" href="#home">Back to Home</a>
-          <a class="btn-hero btn-primary" href="data/Charles%20Abi%20Chahine-Selected%20Work-HQ.pdf" download>Download PDF Resume</a>
-        </p>
+        <aside class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Revit</li>
+            <li>Rhino</li>
+            <li>Grasshopper</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- WORK -->
-    <section id="work" class="section" tabindex="-1" aria-labelledby="work-title">
-      <h2 id="work-title">Selected Projects</h2>
+    <!-- PROJECT GRID -->
+    <section id="projects" class="projects container">
+      <h2 class="section-title reveal">Selected Projects</h2>
 
-      <div class="work-grid">
-        <article class="work-card">
-          <img src="images/point-nought.svg" alt="FYP: Point Nought — Salt Farm, Lebanon">
-          <div class="card-meta">
-            <h4>FYP: Point Nought</h4>
-            <p>Salt Farm, Lebanon — An exploration of saline landscapes and adaptive infrastructures.</p>
-          </div>
+      <div class="grid">
+        <article class="card card--large reveal" style="background-image: url('images/point-nought.jpg')">
+          <a class="card-link" href="#">
+            <h3>FYP: Point Nought</h3>
+            <p>Salt Farm, Lebanon</p>
+          </a>
         </article>
 
-        <article class="work-card">
-          <img src="images/chahines-plaza.svg" alt="Chahine's Square — Khobar, KSA">
-          <div class="card-meta">
-            <h4>Chahine's Square</h4>
-            <p>Khobar, KSA — Public urban interventions and plaza reinvigoration.</p>
-          </div>
+        <article class="card reveal" style="background-image: url('images/chahines-square.jpg')">
+          <a class="card-link" href="#">
+            <h3>Chahine's Square</h3>
+            <p>Khobar, KSA</p>
+          </a>
         </article>
 
-        <article class="work-card">
-          <img src="images/pilsen-five.svg" alt="The Pilsen Five — Chicago, USA">
-          <div class="card-meta">
-            <h4>The Pilsen Five</h4>
-            <p>Chicago, USA — Urban infill and residential strategies in Pilsen.</p>
-          </div>
+        <article class="card card--tall reveal" style="background-image: url('images/pilsen-five.jpg')">
+          <a class="card-link" href="#">
+            <h3>The Pilsen Five</h3>
+            <p>Chicago, USA</p>
+          </a>
         </article>
 
-        <article class="work-card">
-          <img src="images/saria.svg" alt="Saria by Omniyat — Dubai, UAE">
-          <div class="card-meta">
-            <h4>Saria by Omniyat</h4>
-            <p>Dubai, UAE — Mixed-use architectural project focusing on materiality.</p>
-          </div>
+        <article class="card reveal" style="background-image: url('images/saria-omniyat.jpg')">
+          <a class="card-link" href="#">
+            <h3>Saria by Omniyat</h3>
+            <p>Dubai, UAE</p>
+          </a>
         </article>
 
-        <article class="work-card">
-          <img src="images/marsception.svg" alt="Marsception 2024 — The Rings of Mars">
-          <div class="card-meta">
-            <h4>Marsception 2024</h4>
-            <p>The Rings of Mars — Conceptual installation exploring habitation scenarios.</p>
-          </div>
+        <article class="card reveal" style="background-image: url('images/marsception-2024.jpg')">
+          <a class="card-link" href="#">
+            <h3>Marsception 2024</h3>
+            <p>The Rings of Mars</p>
+          </a>
         </article>
       </div>
     </section>
 
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="site-footer container reveal">
+      <p>© 2026 Charles Abi Chahine — <a href="mailto:charles@example.com">charles@example.com</a></p>
+    </footer>
   </main>
 
   <script src="js/script.js" defer></script>
