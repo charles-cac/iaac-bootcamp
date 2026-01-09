@@ -1,0 +1,10 @@
+{
+  "name": "charles-abi-chahine-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx live-server --open=./index.html --port=3000 --quiet",
+    "start": "npx http-server -c-1 . -p 3000 -o",
+    "deploy:gh-pages": "npx gh-pages -d ."
+  }
+}

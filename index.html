@@ -8,7 +8,7 @@
   <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -116,21 +116,6 @@
     </footer>
   </main>
 
-  <!-- Small script for scroll-triggered fade-ins -->
-  <script>
-    (function () {
-      const reveals = document.querySelectorAll('.reveal');
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      reveals.forEach(r => io.observe(r));
-    })();
-  </script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
