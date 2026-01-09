@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Charles Abi Chahine — Selected Work</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-line" aria-hidden="true"></span>
+        <div>
+          <h1 class="site-title">Charles Abi Chahine</h1>
+          <p class="site-tag">Selected Work</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#bio">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container reveal">
+      <div class="hero-inner">
+        <h2 class="hero-name">Charles Abi Chahine</h2>
+        <p class="hero-sub">Architecture · Computational Design · BIM</p>
+        <a href="Charles_Abi_Chahine_Resume.pdf" class="btn-primary" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- RESUME / BIO -->
+    <section id="bio" class="bio container reveal">
+      <div class="bio-grid">
+        <article>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>LAU</strong> — Architecture</li>
+            <li><strong>Kent State</strong> — Exchange</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>SOMA</strong> — Architectural Designer</li>
+            <li><strong>BIM International</strong> — BIM Specialist</li>
+          </ul>
+        </article>
+
+        <aside class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Revit</li>
+            <li>Rhino</li>
+            <li>Grasshopper</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section id="projects" class="projects container">
+      <h2 class="section-title reveal">Selected Projects</h2>
+
+      <div class="grid">
+        <article class="card card--large reveal" style="background-image: url('images/point-nought.jpg')">
+          <a class="card-link" href="#">
+            <h3>FYP: Point Nought</h3>
+            <p>Salt Farm, Lebanon</p>
+          </a>
+        </article>
+
+        <article class="card reveal" style="background-image: url('images/chahines-square.jpg')">
+          <a class="card-link" href="#">
+            <h3>Chahine's Square</h3>
+            <p>Khobar, KSA</p>
+          </a>
+        </article>
+
+        <article class="card card--tall reveal" style="background-image: url('images/pilsen-five.jpg')">
+          <a class="card-link" href="#">
+            <h3>The Pilsen Five</h3>
+            <p>Chicago, USA</p>
+          </a>
+        </article>
+
+        <article class="card reveal" style="background-image: url('images/saria-omniyat.jpg')">
+          <a class="card-link" href="#">
+            <h3>Saria by Omniyat</h3>
+            <p>Dubai, UAE</p>
+          </a>
+        </article>
+
+        <article class="card reveal" style="background-image: url('images/marsception-2024.jpg')">
+          <a class="card-link" href="#">
+            <h3>Marsception 2024</h3>
+            <p>The Rings of Mars</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="site-footer container reveal">
+      <p>© 2026 Charles Abi Chahine — <a href="mailto:charles@example.com">charles@example.com</a></p>
+    </footer>
+  </main>
+
+  <!-- Small script for scroll-triggered fade-ins -->
+  <script>
+    (function () {
+      const reveals = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      reveals.forEach(r => io.observe(r));
+    })();
+  </script>
+</body>
+</html>
