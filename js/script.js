@@ -28,4 +28,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Fade-out navigation for landing links (preserve modifier-click behavior)
+  const landingLinks = document.querySelectorAll('#home .btn-hero');
+  landingLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+      const href = this.getAttribute('href');
+      if (!href) return;
+      e.preventDefault();
+      const block = document.querySelector('#home .hero-block');
+      if (block) {
+        block.classList.add('fade-out');
+        setTimeout(() => { window.location.href = href; }, 320);
+      } else {
+        window.location.href = href;
+      }
+    });
+  });
 });
