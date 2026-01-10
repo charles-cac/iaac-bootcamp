@@ -143,7 +143,7 @@ body{
 
 
 /* CV / About page */
-.cv-layout{display:grid;grid-template-columns: 1fr 320px;gap:36px;align-items:start}
+.cv-layout{display:grid;grid-template-columns: 3fr 1fr;gap:36px;align-items:flex-start}
 .cv-table{width:100%;border-collapse:collapse}
 .cv-table th{font-weight:700;padding:8px 0;text-align:left;color:var(--text)}
 .cv-table td{padding:10px 0;border-bottom:1px solid #f1f1f1;color:var(--muted)}
@@ -154,7 +154,38 @@ body{
 .cv-positions thead th{font-weight:700;color:var(--text)}
 .selected-projects{margin:6px 0 0 1.05rem;color:var(--muted)}
 
-.cv-sidebar{background:#fafafa;padding:18px;border-radius:8px;border:1px solid #f2f2f2}
+.cv-sidebar{background:#fff;padding:18px;border-radius:8px;border:1px solid #f2f2f2}
+
+/* CV-specific typography and timeline */
+.cv-heading{margin:0 0 18px 0;font-size:1.25rem;font-weight:700;letter-spacing:-0.01em;color:var(--text)}
+.about{letter-spacing:-0.01em}
+.cv-section{margin-bottom:22px}
+.cv-section-title{text-transform:uppercase;font-weight:700;color:var(--muted);font-size:0.92rem;margin:0 0 12px 0;letter-spacing:0.08em}
+.timeline{display:flex;flex-direction:column;gap:14px}
+.timeline-item{display:grid;grid-template-columns:120px 1px 1fr;gap:18px;align-items:start}
+.timeline-date{text-align:right;color:var(--muted);font-weight:600;min-width:80px;padding-right:8px;font-size:0.92rem}
+.timeline-split{width:1px;background:var(--deep-red);align-self:stretch;border-radius:1px}
+.timeline-content{padding-left:12px}
+.timeline-title{font-weight:700;color:var(--text);text-transform:uppercase;font-size:0.95rem}
+.timeline-institution{color:var(--muted);font-weight:400;font-size:0.95rem;margin-top:2px}
+.timeline-details{margin:8px 0 0 1.05rem;color:var(--muted);font-size:0.92rem}
+.sidebar-title{text-transform:uppercase;font-weight:700;color:var(--muted);font-size:0.82rem;margin:0 0 12px 0;letter-spacing:0.06em}
+.languages{width:100%;border-collapse:collapse}
+.languages td{padding:6px 8px}
+.languages td:first-child{text-transform:uppercase;color:var(--muted);font-weight:600}
+.lang-level{text-align:right;font-weight:700;color:var(--text)}
+.skills-grid{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.skills-grid li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dashed #f1f1f1}
+.skill{color:var(--text)}
+.skill-level{color:var(--muted);font-weight:600}
+.certificates{list-style:none;padding-left:0;margin:0;color:var(--muted)}
+
+/* Responsive tweaks */
+@media (max-width:900px){
+  .cv-layout{grid-template-columns:1fr}
+  .timeline-item{grid-template-columns:100px 1px 1fr}
+  .timeline-date{text-align:left;padding-right:0}
+}
 
 /* Work / projects */
 .projects {padding-top:24px}

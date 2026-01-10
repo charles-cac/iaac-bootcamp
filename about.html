@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+  <div class="side-accent" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -27,100 +28,123 @@
   <main class="container">
     <section class="about cv container reveal">
       <div class="cv-layout">
-        <div>
-          <h2>Curriculum Vitae</h2>
+        <div class="cv-main">
+          <h2 class="cv-heading">Curriculum Vitae</h2>
 
-          <table class="cv-table" aria-label="CV overview">
-            <tbody>
-              <tr>
-                <th>Education</th>
-                <td colspan="2">
-                  <table class="cv-education" aria-label="Education">
-                    <tbody>
-                      <tr>
-                        <td>2014–2019</td>
-                        <td>Bachelor of Architecture</td>
-                        <td>Lebanese American University (LAU)</td>
-                      </tr>
-                      <tr>
-                        <td>2018</td>
-                        <td>Exchange Program</td>
-                        <td>Kent State University</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-
-              <tr>
-                <th>Professional Experience</th>
-                <td colspan="2">
-                  <table class="cv-positions" aria-label="Work experience">
-                    <thead>
-                      <tr>
-                        <th>Dates</th>
-                        <th>Role</th>
-                        <th>Company</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>2023–Present</td>
-                        <td>Architectural Designer</td>
-                        <td>SOMA</td>
-                      </tr>
-                      <tr>
-                        <td>2021–2023</td>
-                        <td>BIM Specialist</td>
-                        <td>BIM International</td>
-                      </tr>
-                      <tr>
-                        <td>2019–2021</td>
-                        <td>BIM Technician</td>
-                        <td>Dynamic Solution Co</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-
-              <tr>
-                <th>Selected Projects</th>
-                <td colspan="2">
-                  <ul class="selected-projects">
-                    <li>FYP: Point Nought — Salt Farm, Lebanon</li>
-                    <li>Chahine's Square — Khobar, KSA</li>
-                    <li>The Pilsen Five — Chicago, USA</li>
-                    <li>Saria by Omniyat — Dubai, UAE</li>
-                    <li>MG Motors — Dubai, UAE</li>
-                    <li>Marsception 2024 — The Rings of Mars</li>
+          <section class="cv-section">
+            <h3 class="cv-section-title">EDUCATION</h3>
+            <div class="timeline" aria-label="Education timeline">
+              <article class="timeline-item">
+                <div class="timeline-date">2014–2019</div>
+                <div class="timeline-split" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <div class="timeline-title">BACHELOR OF ARCHITECTURE</div>
+                  <div class="timeline-institution">Lebanese American University (LAU)</div>
+                  <ul class="timeline-details">
+                    <li>Graduated with honors; Final Year Project: Point Nought</li>
                   </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </div>
+              </article>
 
-          <p style="margin-top:18px">
-            <a class="btn-hero btn-ghost" href="index.html">Back to Home</a>
-            <a class="btn-hero btn-primary" href="data/Charles%20Abi%20Chahine-Selected%20Work-HQ.pdf" download>Download PDF Resume</a>
-          </p>
+              <article class="timeline-item">
+                <div class="timeline-date">2018</div>
+                <div class="timeline-split" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <div class="timeline-title">EXCHANGE PROGRAM</div>
+                  <div class="timeline-institution">Kent State University</div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3 class="cv-section-title">EXPERIENCE</h3>
+            <div class="timeline" aria-label="Professional experience timeline">
+              <article class="timeline-item">
+                <div class="timeline-date">2023–Present</div>
+                <div class="timeline-split" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <div class="timeline-title">PROJECT ARCHITECT</div>
+                  <div class="timeline-institution">SOMA</div>
+                  <ul class="timeline-details">
+                    <li>Lead design coordination for high-rise towers and residential masterplans</li>
+                    <li>Managed consultant teams and production standards</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2021–2023</div>
+                <div class="timeline-split" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <div class="timeline-title">BIM SPECIALIST</div>
+                  <div class="timeline-institution">BIM International</div>
+                  <ul class="timeline-details">
+                    <li>Developed company-wide BIM standards and clash-detection workflows</li>
+                    <li>Trained staff in Revit and Grasshopper for computational workflows</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2019–2021</div>
+                <div class="timeline-split" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <div class="timeline-title">BIM TECHNICIAN</div>
+                  <div class="timeline-institution">Dynamic Solution Co</div>
+                  <ul class="timeline-details">
+                    <li>Produced coordinated construction documentation and BIM deliverables</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3 class="cv-section-title">SELECTED PROJECTS</h3>
+            <ul class="selected-projects">
+              <li>FYP: Point Nought — Salt Farm, Lebanon</li>
+              <li>Chahine's Square — Khobar, KSA</li>
+              <li>The Pilsen Five — Chicago, USA</li>
+              <li>Saria by Omniyat — Dubai, UAE</li>
+            </ul>
+
+            <p style="margin-top:18px">
+              <a class="btn-hero btn-ghost" href="index.html">Back to Home</a>
+              <a class="btn-hero btn-primary" href="data/Charles%20Abi%20Chahine-Selected%20Work-HQ.pdf" download>Download PDF Resume</a>
+            </p>
+          </section>
         </div>
 
         <aside class="cv-sidebar">
-          <h3>Skills</h3>
-          <ul>
-            <li>Revit</li>
-            <li>Rhino</li>
-            <li>Grasshopper</li>
-            <li>BIM Coordination</li>
-          </ul>
+          <div class="sidebar-block">
+            <h4 class="sidebar-title">LANGUAGES</h4>
+            <table class="languages" aria-label="Languages">
+              <tbody>
+                <tr><td>ARABIC</td><td class="lang-level">NATIVE</td></tr>
+                <tr><td>ENGLISH</td><td class="lang-level">ADVANCED</td></tr>
+                <tr><td>FRENCH</td><td class="lang-level">INTERMEDIATE</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-          <h3 style="margin-top:18px">Languages</h3>
-          <ul>
-            <li>English — Professional</li>
-            <li>Arabic — Native</li>
-            <li>French — Intermediate</li>
-          </ul>
+          <div class="sidebar-block" style="margin-top:18px">
+            <h4 class="sidebar-title">SKILLS</h4>
+            <ul class="skills-grid">
+              <li><span class="skill">Rhinoceros 3d</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill">Grasshopper</span><span class="skill-level">Advanced</span></li>
+              <li><span class="skill">Generative AI</span><span class="skill-level">Beginner</span></li>
+              <li><span class="skill">Revit</span><span class="skill-level">Advanced</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:18px">
+            <h4 class="sidebar-title">CERTIFICATES</h4>
+            <ul class="certificates">
+              <li>Volume Zero — Workshop</li>
+              <li>PA — Workshop</li>
+            </ul>
+          </div>
         </aside>
       </div>
     </section>
