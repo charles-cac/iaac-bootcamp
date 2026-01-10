@@ -27,48 +27,105 @@
   <main class="container">
     <section class="projects reveal">
       <h2>Selected Projects</h2>
-      <div class="grid">
-        <article class="card card--large" style="background-image:url('https://picsum.photos/seed/point-nought/1400/900')">
-          <a class="card-link" href="#">
-            <h3>FYP: Point Nought</h3>
-            <p>Salt Farm, Lebanon — An exploration of saline landscapes and adaptive infrastructures.</p>
-          </a>
+      <div class="projects-grid">
+        <!-- 010 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">010</div>
+            <div class="project-meta">
+              <h3 class="project-title">FYP-POINT NOUGHT</h3>
+              <div class="project-sub">SALT FARM | ANFEH, LEBANON</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="point-nought" data-title="FYP-POINT NOUGHT" data-sub="Salt Farm, Lebanon" aria-label="Open FYP Point Nought">
+            <img src="images/point-nought.png" alt="FYP: Point Nought — Salt Farm, Lebanon">
+          </button>
         </article>
 
-        <article class="card" style="background-image:url('https://picsum.photos/seed/chahines-plaza/1200/900')">
-          <a class="card-link" href="#">
-            <h3>Chahine Plaza</h3>
-            <p>Khobar, KSA — Public urban interventions and plaza reinvigoration.</p>
-          </a>
+        <!-- 011 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">011</div>
+            <div class="project-meta">
+              <h3 class="project-title">CHAHINE'S SQUARE</h3>
+              <div class="project-sub">ROUNDABOUT | KHOBAR, KSA</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="chahines-plaza" data-title="CHAHINE'S SQUARE" data-sub="Roundabout, Khobar, KSA" aria-label="Open Chahine's Square">
+            <img src="https://picsum.photos/seed/chahines-plaza/900/900" alt="Chahine's Square — Khobar, KSA">
+          </button>
         </article>
 
-        <article class="card card--tall" style="background-image:url('https://picsum.photos/seed/pilsen-five/900/1400')">
-          <a class="card-link" href="#">
-            <h3>The Pilsen Five</h3>
-            <p>Chicago, USA — Urban infill and residential strategies in Pilsen.</p>
-          </a>
+        <!-- 012 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">012</div>
+            <div class="project-meta">
+              <h3 class="project-title">THE PILSEN FIVE V</h3>
+              <div class="project-sub">RESIDENTIAL | CHICAGO, USA</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="pilsen-five" data-title="THE PILSEN FIVE V" data-sub="Residential, Chicago, USA" aria-label="Open The Pilsen Five">
+            <img src="https://picsum.photos/seed/pilsen-five/900/900" alt="The Pilsen Five — Chicago, USA">
+          </button>
         </article>
 
-        <article class="card" style="background-image:url('https://picsum.photos/seed/saria/1400/900')">
-          <a class="card-link" href="#">
-            <h3>Saria by Omniyat</h3>
-            <p>Dubai, UAE — Mixed-use architectural project focusing on materiality.</p>
-          </a>
+        <!-- 013 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">013</div>
+            <div class="project-meta">
+              <h3 class="project-title">SARIA BY OMNIYAT</h3>
+              <div class="project-sub">RESIDENTIAL | DUBAI, UAE</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="saria" data-title="SARIA BY OMNIYAT" data-sub="Residential, Dubai, UAE" aria-label="Open Saria by Omniyat">
+            <img src="https://picsum.photos/seed/saria/900/900" alt="Saria by Omniyat — Dubai, UAE">
+          </button>
         </article>
 
-        <article class="card" style="background-image:url('https://picsum.photos/seed/mg-motors/1200/900')">
-          <a class="card-link" href="#">
-            <h3>MG Motors</h3>
-            <p>Dubai, UAE — Brand-driven architectural solutions (placeholder).</p>
-          </a>
+        <!-- 014 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">014</div>
+            <div class="project-meta">
+              <h3 class="project-title">OUTSIDE THE BOX</h3>
+              <div class="project-sub">MG MOTORS BOOTH | KUWAIT</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="mg-motors" data-title="OUTSIDE THE BOX" data-sub="MG Motors Booth, Kuwait" aria-label="Open Outside the Box">
+            <img src="https://picsum.photos/seed/mg-motors/900/900" alt="Outside the Box — MG Motors Booth, Kuwait">
+          </button>
         </article>
 
-        <article class="card" style="background-image:url('https://picsum.photos/seed/marsception/1400/900')">
-          <a class="card-link" href="#">
-            <h3>Marsception 2024</h3>
-            <p>The Rings of Mars — Conceptual installation exploring habitation scenarios.</p>
-          </a>
+        <!-- 015 -->
+        <article class="project">
+          <header class="project-header">
+            <div class="project-number">015</div>
+            <div class="project-meta">
+              <h3 class="project-title">MARSCEPTION 2024</h3>
+              <div class="project-sub">THE RINGS OF MARS | RING 4000</div>
+            </div>
+          </header>
+          <button class="project-thumb" data-seed="marsception" data-title="MARSCEPTION 2024" data-sub="The Rings of Mars, Ring 4000" aria-label="Open Marsception 2024">
+            <img src="https://picsum.photos/seed/marsception/900/900" alt="Marsception 2024 — The Rings of Mars">
+          </button>
         </article>
+      </div>
+
+      <!-- Lightbox modal -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true">
+          <button class="lightbox-close" aria-label="Close">×</button>
+          <figure class="lightbox-figure">
+            <img src="" alt="">
+            <figcaption class="lightbox-caption">
+              <h3></h3>
+              <p></p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
